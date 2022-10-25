@@ -1,0 +1,48 @@
+{
+  "name": "bonk007/pokemon-artisan",
+  "description": "Play Pokemon on artisan command",
+  "keywords": [
+    "pokemon",
+    "artisan",
+    "command",
+    "laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+    "name": "Ayi Muhammad Iqbal Nasuha",
+    "email": "bonk007@github.com",
+    "homepage": "bonk007.github.io"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pokemon\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pokemon\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5.8|^9.3.3"
+  } ,
+  "require": {
+    "illuminate/console": "^7.0|^8.0|^9.0" ,
+    "illuminate/support": "^7.0|^8.0|^9.0" ,
+    "illuminate/cache": "^7.0|^8.0|^9.0" ,
+    "guzzlehttp/guzzle": "^6.3.1|^7.0.1"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Pokemon\\ArtisanPokemonServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
+}
